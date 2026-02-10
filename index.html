@@ -3,62 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saurav Prakash Portfolio</title>
+  <title>Saurav Prakash - Portfolio & Live Applications</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Saurav Prakash</h1>
-    <nav>
-      <ul>
-        <li><a href="#geoone">GeoOne</a></li>
-        <li><a href="#atlas">Atlas</a></li>
-        <li><a href="#aqualens">Aqualens</a></li>
-        <li><a href="#ojos">OJOS Wear</a></li>
-        <li><a href="#other">Other Projects</a></li>
-      </ul>
-    </nav>
+    <div class="container header-flex">
+      <h1>Saurav Prakash</h1>
+      <nav>
+        <ul>
+          <li><a href="#liveapps">Live Applications</a></li>
+          <li><a href="#online">Online Presence</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <section id="geoone" class="card">
-      <h2>GeoOne</h2>
-      <p>Run Your Entire Fleet from Your Pocket with GeoOne.<br>
-      GeoOne puts your entire fleet in your pocket: live vessel tracking, bunker management, agent assignments, and streamlined port-call workflows—smarter, faster maritime ops for every ship.</p>
+    <section id="liveapps" class="container">
+      <h2>Live Applications</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="images/geoone1.png" alt="GeoOne Screenshot">
+          <h3>GeoOne</h3>
+          <p>Next-gen geospatial analytics platform for enterprise spatial data visualization. Built on Node.js & MapLibre GL. </p>
+          <a href="https://geoone.live" target="_blank">Visit GeoOne</a>
+        </div>
+        <div class="card">
+          <img src="images/twiliobot.png" alt="TwilioBot Screenshot">
+          <h3>TwilioBot</h3>
+          <p>Enterprise messaging automation bot. Integrates with Twilio APIs for multi-channel conversations and workflow orchestration.</p>
+          <a href="https://twiliobot.live" target="_blank">Try TwilioBot</a>
+        </div>
+        <div class="card">
+          <img src="images/pdfmapper.png" alt="PDFMapper Screenshot">
+          <h3>PDFMapper</h3>
+          <p>A tool for extracting spatial data from PDF plans. Geo-references plans and maps PDF elements to real-world coordinates. </p>
+          <a href="https://pdfmapper.live" target="_blank">Demo PDFMapper</a>
+        </div>
+      </div>
     </section>
-    <section id="atlas" class="card">
-      <h2>Atlas</h2>
-      <p>Atlas: Your Story. E-commerce for Travel Influencers.<br>
-      Atlas is a virtual itinerary treasure map, showing hidden gems in less-developed regions, just like in the adventurous Jumanji movie.<br>
-      We foster a community where travel creators flourish, offering a user friendly platform to craft captivating travel stories.</p>
+    <section id="online" class="container">
+      <h2>Online Presence</h2>
+      <ul class="social-links">
+        <li><a href="https://github.com/sauravprakash" target="_blank"><img src="images/github.svg" alt="GitHub">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/sauravprakash" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn">LinkedIn</a></li>
+        <li><a href="mailto:im.sauravprakash@gmail.com"><img src="images/email.svg" alt="Email">Email</a></li>
+      </ul>
     </section>
-    <section id="aqualens" class="card">
-      <h2>Aqualens Contact Lenses with Lens AR Tryon</h2>
-      <ul class="downloads"><li>Downloads : 80,000+</li></ul>
-      <p>Get rid of bulky glasses that come in the way of your field of vision.
-      Upgrade to contact lenses and experience comfortable, clear vision without added weight on your face. Shop from our wide range of eye lenses specially designed for your vision and beauty needs...</p>
-      <p>All our contact lenses are manufactured keeping your comfort in mind. We use 3rd Generation Silicone Hydrogel and in-built UV blockers to keep you safe from harmful UV radiation and digital device usage.</p>
-    </section>
-    <section id="ojos" class="card">
-      <h2>OJOS Wear</h2>
-      <ul class="downloads"><li>Downloads : 9,000+ [Early access]</li></ul>
-      <p>OJOS Wear is all about eyewear that spells style and fun in every frame, with collections revamped monthly for you. Get an all-year subscription: 3 eyeglasses at Rs.700 each—a whopping 53% off our entire collection! Choose from comfortable, quirky, unique, and eco-friendly frames.</p>
-      <p>The eyeglasses come fitted with premium lenses at no additional charge. Relax and shop from the comfort of your home. Download the OJOS Wear app on Android and enjoy your pairs of fun!</p>
-    </section>
-    <section id="other" class="card">
-      <h2>Other Projects</h2>
-      <h3>HIGHAPE - Events & Activities in Your City</h3>
-      <ul class="downloads"><li>Downloads: 50,000+</li></ul>
-      <p>Experience discovery platform for events, parties, workshops, and more in your city. Sort and select anything from concerts to adventure sports, and ensure a memorable evening.</p>
-      <h3>OYE LOANS | Online Instant Personal Loans</h3>
-      <ul class="downloads"><li>Downloads: 1 Million+</li></ul>
-      <p>Personal loans from 10,000 to 1 Lakh INR, with no pre-closure fees, instant approval, and quick bank transfers.</p>
-      <h3>PIC MERGER</h3>
-      <ul class="downloads"><li>Downloads: 1 Million+</li></ul>
-      <p>Combine multiple images—either horizontally or vertically—into a single, professional photo grid or framed arrangement with Pic Merger app.</p>
+    <section id="contact" class="container">
+      <h2>Contact</h2>
+      <form id="contactForm" autocomplete="off">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <p class="form-response" style="display:none;"></p>
     </section>
   </main>
+
   <footer>
-    <p>&copy; 2026 Saurav Prakash. All rights reserved.</p>
+    <div class="container">
+      <p>© 2024 Saurav Prakash · <a href="https://github.com/sauravprakash" target="_blank">GitHub</a></p>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>

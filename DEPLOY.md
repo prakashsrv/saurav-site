@@ -1,22 +1,28 @@
-# Deploy Your Static Site to GitHub Pages
+# sauravprakash-site-v2 Static Site
 
-## 1. Create a New Repository
-- Go to [GitHub](https://github.com/) and create a new public repository (e.g., `sauravprakash-site`).
+This is a static personal site for Saurav Prakash showcasing live projects, online presence, and contact details.
 
-## 2. Upload Files
-- Upload the contents of the `sauravprakash-site` folder (`index.html`, `style.css`, `script.js`, and the `images` directory) to your new repo. (Drag-and-drop or use `git`.)
+## Deployment Instructions
 
-## 3. Enable GitHub Pages
-- In your repo, go to **Settings > Pages**.
-- Under **"Source"**, select the **main** branch (or `gh-pages` branch if using that).
-- Choose the `/ (root)` folder.
-- Click **Save**.
+1. **Unzip** the contents of `sauravprakash-site-v2.zip` (or this folder) into your web server's document root.
+   - Example: `/var/www/html/` or `public_html/` if using shared hosting.
+2. **Upload Images**
+   - Images are currently **placeholders** (e.g., `images/geoone1.png`, `images/twiliobot.png`, `images/pdfmapper.png`, `images/github.svg`, `images/linkedin.svg`, `images/email.svg`).
+   - Place your actual images in the `/images/` folder, keeping the same filenames. Update `index.html` if you want to change image paths or add alt text.
+3. **Verify Site**
+   - Open `index.html` in a browser to verify layout, links, and mobile/tablet responsiveness.
+   - Contact form is **static**; to enable submissions, connect it to a form backend (e.g. Formspree, Netlify Forms, or your own API).
+4. **Customization**
+   - Edit `index.html`, `style.css`, and `script.js` to customize for your needs.
 
-Your site will be published at `https://<your-username>.github.io/<repo-name>/`.
+## Features
+- Responsive layout with CSS media queries
+- Project cards with hover & tap effects
+- Smooth scrolling navigation
+- Live application/project showcase
+- Links to GitHub, LinkedIn, Email
+- Clean, modern look
 
-## 4. (Optional) Custom Domain
-- In the **Pages** settings, add your custom domain and update DNS records as needed.
-
----
-
-**Note:** To zip your folder locally, use `zip -r sauravprakash-site.zip sauravprakash-site/` (requires `zip` tool) or upload files directly via GitHub UI.
+## Note
+- Add or replace images in `images/` before deploying for best results.
+- The contact form does not send real messages on its own.
