@@ -1,0 +1,96 @@
+/* Modern Responsive Portfolio Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f7f8fc;
+  color: #222;
+}
+header {
+  background: #2244aa;
+  color: #fff;
+  padding: 1.4rem 0 .7rem 0;
+  box-shadow: 0 2px 16px rgba(67, 91, 151, 0.07);
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+nav ul {
+  padding: 0;
+  margin: 0.6rem 0 0 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  margin: 0 1.2rem;
+}
+nav ul li a {
+  color: #ffa726;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  transition: color 0.2s;
+  font-size: 1.1rem;
+}
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #fff;
+  text-shadow: 0 2px 10px #2244aa77;
+}
+main {
+  max-width: 800px;
+  margin: 2.5rem auto;
+  padding: 2rem 1.2rem;
+}
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(34, 68, 170, 0.04);
+  margin: 2rem 0;
+  padding: 2rem 1.6rem;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 12px 48px rgba(34,68,170,0.09);
+}
+.card h2 {
+  color: #2244aa;
+  margin-top: 0;
+}
+.card .downloads {
+  color: #3ca98f;
+  font-size: 0.95rem;
+  margin: 0 0 0.7rem 0;
+  padding-left: 1.2rem;
+}
+footer {
+  background: #2244aa;
+  color: #fff;
+  text-align: center;
+  padding: 1.1rem;
+  font-size: 1.02rem;
+  position: relative;
+}
+@media (max-width: 600px) {
+  main {
+    padding: 0.7rem;
+  }
+  .card {
+    padding: 1.1rem 0.7rem;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 0.45rem 0;
+  }
+}
